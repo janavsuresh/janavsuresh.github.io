@@ -301,6 +301,12 @@ main section:last-of-type {
   color: var(--accent);
 }
 
+.card-wip {
+  font-family: var(--font-mono);
+  font-size: 0.78rem;
+  color: var(--mint);
+}
+
 .card h3 {
   font-size: 1.15rem;
 }
