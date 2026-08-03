@@ -4,54 +4,189 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Janav Suresh</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=JetBrains+Mono:wght@400;500&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
   <nav>
-    <h1>Janav Suresh</h1>
-    <ul>
-      <li><a href="#about">About</a></li>
-      <li><a href="#projects">Projects</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul>
+    <div class="nav-inner">
+      <a href="#home" class="brand">JS<span class="dot">.</span></a>
+      <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#certificates">Certificates</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
   </nav>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      I’m a 11th grade student interested in computer science, software development,
-      and building practical applications.
-    </p>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-
-    <div class="card">
-      <h3>Personal Finance Tracker</h3>
-      <p>
-        An app to track expenses and analyze spending habits using a clean UI
-        and efficient logic.
-      </p>
+  <header id="home" class="hero">
+    <div class="hero-inner">
+      <p class="eyebrow"><span class="prompt">$</span> whoami</p>
+      <h1>Janav Suresh</h1>
+      <p class="tagline">12th grade student building software &mdash; interested in computer science,
+        development, and shipping practical things that work.</p>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View projects</a>
+        <a href="#contact" class="btn btn-ghost">Get in touch</a>
+      </div>
     </div>
+    <div class="hero-grid" aria-hidden="true"></div>
+  </header>
 
-    <div class="card">
-      <h3>Volunteer Event Platform</h3>
-      <p>
-        A web platform to manage volunteer events, signups, and coordination.
-      </p>
-    </div>
-  </section>
+  <main>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: ---</p>
-    <p>GitHub: github.com/janavsuresh</p>
-  </section>
+    <section id="about">
+      <p class="eyebrow"><span class="prompt">$</span> cat about.md</p>
+      <h2>About</h2>
+      <div class="about-body">
+        <p>
+          [Placeholder &mdash; replace with a short paragraph about who you are, what you're
+          currently learning or working on, and what kind of problems you like solving.]
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <p class="eyebrow"><span class="prompt">$</span> ls skills/</p>
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <p>[Placeholder &mdash; e.g. Python, JavaScript, Java]</p>
+        </div>
+        <div class="skill-card">
+          <h3>Tools &amp; Platforms</h3>
+          <p>[Placeholder &mdash; e.g. Git, VS Code, Linux]</p>
+        </div>
+        <div class="skill-card">
+          <h3>Currently Learning</h3>
+          <p>[Placeholder &mdash; e.g. React, data structures]</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="certificates">
+      <p class="eyebrow"><span class="prompt">$</span> ls certificates/</p>
+      <h2>Certificates &amp; Courses</h2>
+      <div class="cert-grid">
+
+        <article class="cert-card">
+          <div class="cert-top">
+            <span class="card-index">01</span>
+            <a href="https://cs50.harvard.edu/certificates/a5c5638d-0d8f-4c77-a777-05ee0009b132" target="_blank" rel="noopener" class="cert-link">Verify</a>
+          </div>
+          <h3>Introduction to Programming with Python (CS50P)</h3>
+          <p class="cert-issuer">Harvard University / CS50</p>
+          <p class="cert-date">2026</p>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-top">
+            <span class="card-index">02</span>
+            <a href="https://drive.google.com/file/d/1EteAbEsmLgGqDIY7tkp4QtA7rY_8ya7t/view?usp=sharing" target="_blank" rel="noopener" class="cert-link">View</a>
+          </div>
+          <h3>Summer Research Internship — AI &amp; Cyber Security</h3>
+          <p class="cert-issuer">UT Dallas, Dept. of Computer Science</p>
+          <p class="cert-date">June – July 2026</p>
+        </article>
+
+        <article class="cert-card">
+          <div class="cert-top">
+            <span class="card-index">03</span>
+            <a href="#" target="_blank" rel="noopener" class="cert-link">Verify</a>
+          </div>
+          <h3>[Certificate/Course Title]</h3>
+          <p class="cert-issuer">[Issuer]</p>
+          <p class="cert-date">[Month Year]</p>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="projects">
+      <p class="eyebrow"><span class="prompt">$</span> ls projects/</p>
+      <h2>Projects</h2>
+      <div class="projects-grid">
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-index">01</span>
+            <div class="card-links">
+              <a href="#" aria-label="Repository link">Repo</a>
+              <a href="#" aria-label="Live demo link">Live</a>
+            </div>
+          </div>
+          <h3>[Project Title]</h3>
+          <p>[Placeholder &mdash; one or two sentences on what it does and the problem it solves.]</p>
+          <ul class="tags">
+            <li>[stack]</li>
+            <li>[stack]</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-index">02</span>
+            <div class="card-links">
+              <a href="#" aria-label="Repository link">Repo</a>
+              <a href="#" aria-label="Live demo link">Live</a>
+            </div>
+          </div>
+          <h3>[Project Title]</h3>
+          <p>[Placeholder &mdash; one or two sentences on what it does and the problem it solves.]</p>
+          <ul class="tags">
+            <li>[stack]</li>
+            <li>[stack]</li>
+          </ul>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <span class="card-index">03</span>
+            <div class="card-links">
+              <a href="#" aria-label="Repository link">Repo</a>
+              <a href="#" aria-label="Live demo link">Live</a>
+            </div>
+          </div>
+          <h3>[Project Title]</h3>
+          <p>[Placeholder &mdash; one or two sentences on what it does and the problem it solves.]</p>
+          <ul class="tags">
+            <li>[stack]</li>
+            <li>[stack]</li>
+          </ul>
+        </article>
+
+      </div>
+    </section>
+
+    <section id="contact">
+      <p class="eyebrow"><span class="prompt">$</span> contact --info</p>
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <a class="contact-item" href="mailto:your.email@example.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">[your.email@example.com]</span>
+        </a>
+        <a class="contact-item" href="https://github.com/janavsuresh" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">github.com/janavsuresh</span>
+        </a>
+        <a class="contact-item" href="#" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">[linkedin.com/in/yourname]</span>
+        </a>
+      </div>
+    </section>
+
+  </main>
 
   <footer>
-    <p>© 2026 Janav Suresh</p>
+    <p>&copy; 2026 Janav Suresh &middot; built with HTML &amp; CSS</p>
   </footer>
 
 </body>
